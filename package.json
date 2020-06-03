@@ -1,5 +1,6 @@
 {
   "name": "naodigaisso",
+  "description": "não diga isso.",
   "version": "0.0.0",
   "main": "index.js",
   "repository": "naodigaisso/naodigaisso",
