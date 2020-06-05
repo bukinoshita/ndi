@@ -20,7 +20,7 @@ export const Page = ({ children }: PageProps) => {
         <link rel="icon" href="static/icon.png" type="image/png" />
         <meta name="theme-color" content={Colors.Background} />
 
-        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <meta name="viewport" content="width=device-width" />
 
         <link
           href="https://fonts.googleapis.com/css?family=Inter:500&display=swap"
