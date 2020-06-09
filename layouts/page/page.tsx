@@ -3,7 +3,10 @@ import Head from 'next/head'
 
 import pkg from '../../package.json'
 
+import { Sidebar } from 'components/sidebar'
+
 import { Colors } from 'ui/theme'
+import { Row } from 'ui/row'
 
 export type PageProps = {
   children: ReactNode
@@ -18,7 +21,7 @@ export const Page = ({ children }: PageProps) => {
 
         <link rel="apple-touch-icon" href="static/icon.png" />
         <link rel="icon" href="static/icon.png" type="image/png" />
-        <meta name="theme-color" content={Colors.Background} />
+        <meta name="theme-color" content={Colors.White} />
 
         <meta name="viewport" content="width=device-width, user-scalable=no" />
 
@@ -40,7 +43,20 @@ export const Page = ({ children }: PageProps) => {
         <meta property="og:type" content="website" />
       </Head>
 
-      {children}
+      <Row>
+        <div className="page">
+          <Sidebar />
+          <main>{children}</main>
+        </div>
+      </Row>
+
+      <style jsx>{`
+        .page {
+          display: grid;
+          grid-template-columns: 225px 1fr;
+          grid-gap: 80px;
+        }
+      `}</style>
 
       <style jsx global>{`
         * {
@@ -52,8 +68,12 @@ export const Page = ({ children }: PageProps) => {
 
         body {
           font-family: 'Inter';
-          background-color: ${Colors.Background};
-          color: ${Colors.White};
+          background-color: ${Colors.White};
+          color: ${Colors.GrayDarker};
+        }
+
+        a {
+          color: ${Colors.GrayDarker};
         }
 
         svg {
