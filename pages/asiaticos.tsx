@@ -4,19 +4,19 @@ import { Page } from 'layouts/page'
 
 import { Header } from 'components/header'
 
-const Home = ({ list }: any) => {
+const Asiaticos = ({ list }: any) => {
   return (
     <Page>
-      <Header title="Pretos" />
+      <Header title="Asiaticos" />
     </Page>
   )
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API}/pretos`)
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API}/asiaticos`)
   const list = await res.json()
 
   return { props: { list } }
 }
 
-export default Home
+export default Asiaticos
