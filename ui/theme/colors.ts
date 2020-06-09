@@ -1,7 +1,7 @@
 export enum Colors {
-	Background = '#0e1012',
-	Black = '#000000',
-	White = '#ffffff',
-	Text = '#929394',
-	Border = '#ffffff12'
+  Black = '#000000',
+  White = '#ffffff',
+  Gray = '#76767c',
+  GrayDarker = '#29292b',
+  Border = '#e5e8ed',
 }
