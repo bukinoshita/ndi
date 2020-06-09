@@ -51,7 +51,7 @@ export const Sidebar = () => {
         </li>
 
         <li className="sidebar-nav-item">
-          <Link href="/" passHref>
+          <Link href="/lgbtq" passHref>
             <a className={getRouteClass('/lgbtq')}>LGBTQ+</a>
           </Link>
         </li>
