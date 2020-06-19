@@ -1,18 +1,23 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 
-type Data = {
+export type Data = Array<{
   term: { title: string; description: string }
   replacements: string[]
-}[]
+}>
 
-export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
-  res.status(200).json([
+const asiaticos = (
+  request: NextApiRequest,
+  response: NextApiResponse<Data>
+) => {
+  response.status(200).json([
     {
       term: {
         title: '',
-        description: '',
+        description: ''
       },
-      replacements: [],
-    },
+      replacements: []
+    }
   ])
 }
+
+export default asiaticos

@@ -4,17 +4,25 @@ import { Page } from 'layouts/page'
 
 import { Header } from 'components/header'
 
-const LGBTQ = ({ list }: any) => {
+import { Data } from './api/asiaticos'
+
+export type Props = {
+  list: Data
+}
+
+const LGBTQ = ({ list }: Props) => {
   return (
     <Page>
       <Header title="LGBTQ+" />
+
+      {list.map((item) => item?.term?.title)}
     </Page>
   )
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API}/lgbtq`)
-  const list = await res.json()
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API}/lgbtq`)
+  const list = await response.json()
 
   return { props: { list } }
 }
