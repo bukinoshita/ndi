@@ -44,7 +44,8 @@
     ],
     "globals": [
       "window",
-      "document"
+      "document",
+      "fetch"
     ]
   }
 }

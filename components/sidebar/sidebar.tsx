@@ -22,36 +22,36 @@ export const Sidebar = () => {
   const isActiveRoute = (route: string) => route === router.pathname
   const getRouteClass = (route: string) =>
     classnames('sidebar-nav-item__link', {
-      'sidebar-nav-item__link--active': isActiveRoute(route),
+      'sidebar-nav-item__link--active': isActiveRoute(route)
     })
 
   return (
     <aside className="sidebar">
-      <Link href="/" passHref>
+      <Link passHref href="/">
         <a className="sidebar__logo">ndi_</a>
       </Link>
 
       <ul className="sidebar-nav">
         <li className="sidebar-nav-item">
-          <Link href="/" passHref>
+          <Link passHref href="/">
             <a className={getRouteClass('/')}>Pretos</a>
           </Link>
         </li>
 
         <li className="sidebar-nav-item">
-          <Link href="/mulheres" passHref>
+          <Link passHref href="/mulheres">
             <a className={getRouteClass('/mulheres')}>Mulheres</a>
           </Link>
         </li>
 
         <li className="sidebar-nav-item">
-          <Link href="/asiaticos" passHref>
+          <Link passHref href="/asiaticos">
             <a className={getRouteClass('/asiaticos')}>Asiáticos</a>
           </Link>
         </li>
 
         <li className="sidebar-nav-item">
-          <Link href="/lgbtq" passHref>
+          <Link passHref href="/lgbtq">
             <a className={getRouteClass('/lgbtq')}>LGBTQ+</a>
           </Link>
         </li>

@@ -33,12 +33,18 @@ export const Page = ({ children }: PageProps) => {
         <meta property="og:title" content={pkg.name} />
         <meta property="og:description" content={pkg.description} />
 
-        <meta name="twitter:image" content="https://naodigaisso.com/static/cover.png" />
+        <meta
+          name="twitter:image"
+          content="https://naodigaisso.com/static/cover.png"
+        />
         <meta name="twitter:card" content="summary_large_image" />
 
         <meta property="og:title" content={pkg.name} />
         <meta property="og:description" content={pkg.description} />
-        <meta property="og:image" content="https://naodigaisso.com/static/cover.png" />
+        <meta
+          property="og:image"
+          content="https://naodigaisso.com/static/cover.png"
+        />
         <meta property="og:url" content="https://naodigaisso.com" />
         <meta property="og:type" content="website" />
       </Head>
