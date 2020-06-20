@@ -10,10 +10,10 @@ const lgbtq = (request: NextApiRequest, response: NextApiResponse<Data>) => {
     {
       term: {
         title: '',
-        description: ''
+        description: '',
       },
-      replacements: []
-    }
+      replacements: [],
+    },
   ])
 }
 

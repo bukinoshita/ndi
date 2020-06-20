@@ -1,30 +1,22 @@
 import React from 'react'
+import useSWR from 'swr'
 
 import { Page } from 'layouts/page'
 
 import { Header } from 'components/header'
 
-import { Data } from './api/asiaticos'
+import { fetch } from 'utils/fetch'
 
-export type Props = {
-  list: Data
-}
+const LGBTQ = () => {
+  const { data } = useSWR<string[]>('/api/lgbtq', fetch)
 
-const LGBTQ = ({ list }: Props) => {
   return (
     <Page>
       <Header title="LGBTQ+" />
 
-      {list.map((item) => item?.term?.title)}
+      {data && data.map((item: any) => item?.term?.title)}
     </Page>
   )
-}
-
-export async function getStaticProps() {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_API}/lgbtq`)
-  const list = await response.json()
-
-  return { props: { list } }
 }
 
 export default LGBTQ

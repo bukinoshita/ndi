@@ -13,10 +13,10 @@ const asiaticos = (
     {
       term: {
         title: '',
-        description: ''
+        description: '',
       },
-      replacements: []
-    }
+      replacements: [],
+    },
   ])
 }
 

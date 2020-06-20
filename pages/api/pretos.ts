@@ -10,10 +10,10 @@ const pretos = (request: NextApiRequest, response: NextApiResponse<Data>) => {
     {
       term: {
         title: '',
-        description: ''
+        description: '',
       },
-      replacements: []
-    }
+      replacements: [],
+    },
   ])
 }
 
