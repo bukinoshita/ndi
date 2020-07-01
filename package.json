@@ -28,7 +28,7 @@
     "@types/styled-jsx": "2.2.8",
     "eslint-config-xo-react": "0.23.0",
     "eslint-config-xo-typescript": "0.31.0",
-    "eslint-plugin-react": "7.20.2",
+    "eslint-plugin-react": "7.20.3",
     "eslint-plugin-react-hooks": "4.0.4",
     "typescript": "3.9.6",
     "vercel": "19.1.1",
