@@ -13,11 +13,11 @@ export const Row = ({ children }: RowProps) => {
 
       <style jsx>{`
         div {
-          max-width: 932px;
+          max-width: 1400px;
           margin-left: auto;
           margin-right: auto;
-          padding-left: ${space.spacing(4)};
-          padding-right: ${space.spacing(4)};
+          padding-left: ${space.spacing(10)};
+          padding-right: ${space.spacing(10)};
         }
       `}</style>
     </div>
