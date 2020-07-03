@@ -19,6 +19,7 @@
     "next": "9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-use-keypress": "1.0.0",
     "swr": "0.2.3"
   },
   "devDependencies": {
@@ -39,7 +40,8 @@
     "rules": {
       "@typescript-eslint/prefer-readonly-parameter-types": 0,
       "react/button-has-type": 0,
-      "spaced-comment": 0
+      "spaced-comment": 0,
+      "react/jsx-pascal-case": 0
     },
     "ignores": [
       "public"

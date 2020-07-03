@@ -6235,6 +6235,11 @@ react-refresh@0.8.3:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
+react-use-keypress@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-use-keypress/-/react-use-keypress-1.0.0.tgz#0abcde0b5bd1b97f7f21d994b9f061d8d59b6671"
+  integrity sha512-Al1n3g5DRGiO5VhdS3Q6mbKnITLjfli1p3KA/mzlqgxWArN1HfBQwgXPKI1oTRoziR8mt80StuzjmqWbBaq1mg==
+
 react@16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"

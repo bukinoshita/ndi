@@ -3,20 +3,21 @@ import Head from 'next/head'
 
 import pkg from '../../package.json'
 
-import { Sidebar } from 'components/sidebar'
-
 import { Colors } from 'ui/theme'
 import { Row } from 'ui/row'
+import { Header } from 'components/header'
+import { Footer } from 'components/footer/footer'
 
 export type PageProps = {
   children: ReactNode
+  onChangeWord: () => void
 }
 
-export const Page = ({ children }: PageProps) => {
+export const Page = ({ children, onChangeWord }: PageProps) => {
   return (
     <>
       <Head>
-        <title>{pkg.name}</title>
+        <title>ndi — não diga isso</title>
         <meta name="description" content={pkg.description} />
 
         <link rel="apple-touch-icon" href="static/icon.png" />
@@ -26,7 +27,7 @@ export const Page = ({ children }: PageProps) => {
         <meta name="viewport" content="width=device-width" />
 
         <link
-          href="https://fonts.googleapis.com/css?family=Inter:500&display=swap"
+          href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap"
           rel="stylesheet"
         />
 
@@ -50,19 +51,12 @@ export const Page = ({ children }: PageProps) => {
       </Head>
 
       <Row>
+        <Header />
         <div className="page">
-          <Sidebar />
           <main>{children}</main>
         </div>
+        <Footer onChangeWord={onChangeWord} />
       </Row>
-
-      <style jsx>{`
-        .page {
-          display: grid;
-          grid-template-columns: 225px 1fr;
-          grid-gap: 80px;
-        }
-      `}</style>
 
       <style jsx global>{`
         * {
@@ -75,11 +69,11 @@ export const Page = ({ children }: PageProps) => {
         body {
           font-family: 'Inter';
           background-color: ${Colors.White};
-          color: ${Colors.GrayDarker};
+          color: ${Colors.Black};
         }
 
         a {
-          color: ${Colors.GrayDarker};
+          color: ${Colors.Black};
         }
 
         svg {

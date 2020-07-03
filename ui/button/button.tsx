@@ -3,11 +3,12 @@ import { Colors, space, Weight, Radius } from 'ui/theme'
 
 export type ButtonProps = {
   children: ReactNode
+  onClick: () => void
 }
 
-export const Button = ({ children }: ButtonProps) => {
+export const Button = ({ children, onClick }: ButtonProps) => {
   return (
-    <button>
+    <button onClick={onClick}>
       {children}
 
       <style jsx>{`
