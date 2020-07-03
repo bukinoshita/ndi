@@ -1,4 +1,5 @@
 import React from 'react'
+import Router from 'next/router'
 
 import { Button } from 'ui/button'
 import { Colors, space, Weight } from 'ui/theme'
@@ -11,7 +12,7 @@ export const Header = () => {
         <a className="logo">ndi_</a>
       </Link>
 
-      <Button>Adicionar novo termo</Button>
+      <Button onClick={() => Router.push('/')}>Adicionar novo termo</Button>
 
       <style jsx>
         {`
