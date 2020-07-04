@@ -42,8 +42,9 @@ export const Footer = ({ onChangeWord }: FooterProps) => {
 
       <style jsx>{`
         footer {
-          margin-top: ${space.spacing(10)};
-          margin-bottom: ${space.spacing(10)};
+          height: 100px;
+          display: flex;
+          align-items: center;
         }
 
         svg {

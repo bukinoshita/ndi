@@ -19,11 +19,11 @@ export const Header = () => {
       <style jsx>
         {`
           header {
-            padding-top: ${space.spacing(10)};
-            padding-bottom: ${space.spacing(10)};
             display: flex;
             align-items: center;
             justify-content: space-between;
+            width: 100%;
+            height: 140px;
           }
 
           .logo {

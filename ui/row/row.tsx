@@ -16,8 +16,8 @@ export const Row = ({ children }: RowProps) => {
           max-width: 1400px;
           margin-left: auto;
           margin-right: auto;
-          padding-left: ${space.spacing(10)};
-          padding-right: ${space.spacing(10)};
+          padding-left: ${space.spacing(6)};
+          padding-right: ${space.spacing(6)};
         }
       `}</style>
     </div>

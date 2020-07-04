@@ -13,6 +13,16 @@ export type PageProps = {
   onChangeWord: () => void
 }
 
+if ('document' in global) {
+  const vh = window.innerHeight * 0.01
+  document.documentElement.style.setProperty('--vh', `${vh}px`)
+
+  window.addEventListener('resize', () => {
+    const vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+  })
+}
+
 export const Page = ({ children, onChangeWord }: PageProps) => {
   return (
     <>
@@ -51,12 +61,23 @@ export const Page = ({ children, onChangeWord }: PageProps) => {
       </Head>
 
       <Row>
-        <Header />
         <div className="page">
+          <Header />
           <main>{children}</main>
+          <Footer onChangeWord={onChangeWord} />
         </div>
-        <Footer onChangeWord={onChangeWord} />
       </Row>
+
+      <style jsx>{`
+        .page {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          height: 100vh;
+          height: calc(var(--vh, 1vh) * 100);
+          min-height: -webkit-fill-available;
+        }
+      `}</style>
 
       <style jsx global>{`
         * {
@@ -64,6 +85,11 @@ export const Page = ({ children, onChangeWord }: PageProps) => {
           padding: 0;
           box-sizing: border-box;
           -webkit-font-smoothing: antialiased;
+        }
+
+        html,
+        body {
+          height: 100%;
         }
 
         body {
