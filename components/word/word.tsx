@@ -1,55 +1,35 @@
 import React, { Fragment } from 'react'
 import { Colors, space, Weight, Responsive } from 'ui/theme'
 
-if ('document' in global) {
-  const vh = window.innerHeight * 0.01
-  document.documentElement.style.setProperty('--vh', `${vh}px`)
-
-  window.addEventListener('resize', () => {
-    const vh = window.innerHeight * 0.01
-    document.documentElement.style.setProperty('--vh', `${vh}px`)
-  })
-}
-
 export const Word = ({ word }: any) => {
   return (
     <section>
+      <h1 title={word?.term?.title?.slug}>
+        {word?.term?.title?.formatted.map((syllabus: string, index: number) => {
+          const isLast = word?.term?.title?.formatted.length === index + 1
+
+          return (
+            <Fragment key={index}>
+              {syllabus}
+              {!isLast && <span />}
+            </Fragment>
+          )
+        })}
+      </h1>
+
+      <p>{word?.term?.description}</p>
+
       <div>
-        <h1 title={word?.term?.title?.slug}>
-          {word?.term?.title?.formatted.map(
-            (syllabus: string, index: number) => {
-              const isLast = word?.term?.title?.formatted.length === index + 1
+        <h3>Subtstituir por:</h3>
 
-              return (
-                <Fragment key={index}>
-                  {syllabus}
-                  {!isLast && <span />}
-                </Fragment>
-              )
-            }
-          )}
-        </h1>
-
-        <p>{word?.term?.description}</p>
-
-        <div>
-          <h3>Subtstituir por:</h3>
-
-          <ul>
-            {word.replacements.map((replacement: string) => {
-              return <li key={replacement}>{replacement}</li>
-            })}
-          </ul>
-        </div>
+        <ul>
+          {word.replacements.map((replacement: string) => {
+            return <li key={replacement}>{replacement}</li>
+          })}
+        </ul>
       </div>
 
       <style jsx>{`
-        section {
-          display: flex;
-          align-items: center;
-          min-height: calc((var(--vh, 1vh) * 100) - 250px);
-        }
-
         h1 {
           font-size: 40px;
           font-weight: ${Weight.Medium};
