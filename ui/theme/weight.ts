@@ -7,5 +7,5 @@ export enum Weight {
   Semibold = 600,
   Bold = 700,
   ExtraBold = 800,
-  Black = 900
+  Black = 900,
 }

@@ -1,3 +1,3 @@
 export enum Responsive {
-  Small = 'screen and (min-width: 800px)'
+  Small = 'screen and (min-width: 800px)',
 }
