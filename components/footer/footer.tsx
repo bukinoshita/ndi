@@ -32,6 +32,7 @@ export const Footer = ({ onChangeWord }: FooterProps) => {
         tabIndex={0}
         onClick={onChangeWord}
         role="button"
+        aria-label="Ir para o próximo termo"
         onKeyPress={(event: KeyboardEvent<HTMLDivElement>) =>
           event.key === 'Enter' && onChangeWord(event)
         }
