@@ -1,0 +1,21 @@
+{
+  "name": "nao diga isso",
+  "short_name": "ndi",
+  "icons": [
+    {
+      "src": "/static/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/static/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#FFFFFF",
+  "description": "nao diga isso",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#fff"
+}
