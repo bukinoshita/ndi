@@ -35,6 +35,7 @@ export const Page = ({ children, onChangeWord }: PageProps) => {
         <meta name="theme-color" content={Colors.White} />
 
         <meta name="viewport" content="width=device-width" />
+        <link rel="manifest" href="/manifest.json" />
 
         <link
           href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap"
