@@ -8,8 +8,10 @@ import Link from 'next/link'
 export const Header = () => {
   return (
     <header>
-      <Link passHref href="/">
-        <a className="logo">ndi_</a>
+      <Link href="/">
+        <a href="/" className="logo">
+          ndi_
+        </a>
       </Link>
 
       <Button onClick={() => Router.push('/')}>Adicionar novo termo</Button>

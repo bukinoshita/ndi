@@ -4,5 +4,5 @@ export enum Radius {
   Medium = '6px',
   Large = '8px',
   ExtraLarge = '20px',
-  Rounded = '50%'
+  Rounded = '50%',
 }

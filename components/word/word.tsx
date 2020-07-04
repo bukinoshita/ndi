@@ -15,7 +15,7 @@ export const Word = ({ word }: any) => {
   return (
     <section>
       <div>
-        <h1>
+        <h1 title={word?.term?.title?.slug}>
           {word?.term?.title?.formatted.map(
             (syllabus: string, index: number) => {
               const isLast = word?.term?.title?.formatted.length === index + 1

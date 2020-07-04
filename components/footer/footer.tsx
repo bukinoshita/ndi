@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { KeyboardEvent } from 'react'
 
 import { space, Responsive } from 'ui/theme'
 import { KBD } from 'ui/kbd'
 
-export const Footer = ({ onChangeWord }: any) => {
+export type FooterProps = {
+  onChangeWord: any
+}
+
+export const Footer = ({ onChangeWord }: FooterProps) => {
   return (
     <footer>
       <p className="tip">
@@ -24,9 +28,16 @@ export const Footer = ({ onChangeWord }: any) => {
         Aperte <KBD>espaço</KBD> para ir para o próximo termo.
       </p>
 
-      <p className="tap" onClick={onChangeWord}>
-        Clique aqui para ir para o próximo termo.
-      </p>
+      <div
+        tabIndex={0}
+        onClick={onChangeWord}
+        role="button"
+        onKeyPress={(event: KeyboardEvent<HTMLDivElement>) =>
+          event.key === 'Enter' && onChangeWord(event)
+        }
+      >
+        <p className="tap">Clique aqui para ir para o próximo termo.</p>
+      </div>
 
       <style jsx>{`
         footer {
