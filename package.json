@@ -1,6 +1,6 @@
 {
   "name": "naodigaisso",
-  "description": "não diga isso.",
+  "description": "a brazilian project to create awareness of specific racist words and expressions",
   "version": "0.0.0",
   "main": "index.js",
   "repository": "naodigaisso/naodigaisso",
