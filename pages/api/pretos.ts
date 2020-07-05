@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next'
+import list from '../../words/pretos.json'
 
 type Data = Array<{
   term: {
@@ -12,30 +13,7 @@ type Data = Array<{
 }>
 
 const pretos = (request: NextApiRequest, response: NextApiResponse<Data>) => {
-  response.status(200).json([
-    {
-      term: {
-        title: {
-          slug: 'denegrir',
-          formatted: ['de', 'ne', 'grir'],
-        },
-        description:
-          'Fazer ficar mais negro; tornar escuro; obscurecer, obscurecer-se.',
-      },
-      replacements: ['Macular', 'Infamar', 'Caluniar'],
-    },
-    {
-      term: {
-        title: {
-          slug: 'criado-mudo',
-          formatted: ['cri', 'a', 'do', 'mu', 'do'],
-        },
-        description:
-          'Escravos eram obrigados a segurar objetos para os seus senhores ao lado da cama.',
-      },
-      replacements: ['Mesa de cabeceira'],
-    },
-  ])
+  response.status(200).json(list)
 }
 
 export default pretos
