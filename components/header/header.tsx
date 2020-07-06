@@ -1,8 +1,7 @@
 import React from 'react'
-import Router from 'next/router'
 
 import { Button } from 'ui/button'
-import { Colors, space, Weight } from 'ui/theme'
+import { Colors, Weight } from 'ui/theme'
 import Link from 'next/link'
 
 export const Header = () => {
@@ -14,7 +13,15 @@ export const Header = () => {
         </a>
       </Link>
 
-      <Button onClick={() => Router.push('/')}>Adicionar novo termo</Button>
+      <Button
+        onClick={() =>
+          window.open(
+            'https://github.com/bukinoshita/naodigaisso/issues/new?template=2.Feature_request.md'
+          )
+        }
+      >
+        Adicionar novo termo
+      </Button>
 
       <style jsx>
         {`
