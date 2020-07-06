@@ -14,7 +14,7 @@ export const Header = () => {
         </a>
       </Link>
 
-      <Button onClick={() => Router.push('/')}>Adicionar novo termo</Button>
+      <Button onClick={() => Router.push('/new')}>Adicionar novo termo</Button>
 
       <style jsx>
         {`

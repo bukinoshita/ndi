@@ -7,6 +7,8 @@ import { Page } from 'layouts/page'
 import { Word } from 'components/word'
 
 import { fetch } from 'utils/fetch'
+import { Header } from 'components/header'
+import { Footer } from 'components/footer'
 
 export async function getStaticProps() {
   const data = await fetch(`${process.env.NEXT_PUBLIC_API}/pretos`)
@@ -27,8 +29,10 @@ export const Home = (props: any) => {
   useKeypress(KEY_SPACE, onChangeWord)
 
   return (
-    <Page onChangeWord={onChangeWord}>
+    <Page>
+      <Header />
       <Word word={word} />
+      <Footer onChangeWord={onChangeWord} />
     </Page>
   )
 }
