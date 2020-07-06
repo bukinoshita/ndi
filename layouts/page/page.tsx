@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, CSSProperties } from 'react'
 import Head from 'next/head'
 
 import pkg from '../../package.json'
@@ -10,7 +10,8 @@ import { Footer } from 'components/footer/footer'
 
 export type PageProps = {
   children: ReactNode
-  onChangeWord: () => void
+  onChangeWord?: () => void
+  style?: CSSProperties
 }
 
 if ('document' in global) {
@@ -23,7 +24,7 @@ if ('document' in global) {
   })
 }
 
-export const Page = ({ children, onChangeWord }: PageProps) => {
+export const Page = ({ children, onChangeWord, style }: PageProps) => {
   return (
     <>
       <Head>
@@ -62,10 +63,10 @@ export const Page = ({ children, onChangeWord }: PageProps) => {
       </Head>
 
       <Row>
-        <div className="page">
+        <div className="page" style={style}>
           <Header />
           <main>{children}</main>
-          <Footer onChangeWord={onChangeWord} />
+          {onChangeWord && <Footer onChangeWord={onChangeWord} />}
         </div>
       </Row>
 
