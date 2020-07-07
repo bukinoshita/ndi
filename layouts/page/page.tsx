@@ -43,7 +43,7 @@ export const Page = ({ children, onChangeWord, style }: PageProps) => {
           rel="stylesheet"
         />
 
-        <meta property="og:title" content={pkg.name} />
+        <meta property="og:title" content="ndi — não diga isso" />
         <meta property="og:description" content={pkg.description} />
 
         <meta
@@ -52,12 +52,9 @@ export const Page = ({ children, onChangeWord, style }: PageProps) => {
         />
         <meta name="twitter:card" content="summary_large_image" />
 
-        <meta property="og:title" content={pkg.name} />
+        <meta property="og:title" content="ndi — não diga isso" />
         <meta property="og:description" content={pkg.description} />
-        <meta
-          property="og:image"
-          content="https://naodigaisso.com/static/cover.png"
-        />
+        <meta property="og:image" content="static/cover.png" />
         <meta property="og:url" content="https://naodigaisso.com" />
         <meta property="og:type" content="website" />
       </Head>
