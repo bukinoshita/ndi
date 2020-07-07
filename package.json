@@ -1,9 +1,9 @@
 {
-  "name": "naodigaisso",
+  "name": "ndi",
   "description": "a brazilian project to create awareness of specific racist words and expressions",
   "version": "0.0.0",
   "main": "index.js",
-  "repository": "naodigaisso/naodigaisso",
+  "repository": "bukinoshita/ndi",
   "license": "MIT",
   "scripts": {
     "dev": "next",
