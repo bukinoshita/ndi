@@ -7,7 +7,7 @@ const App = ({ Component, pageProps }) => {
 
   useEffect(() => {
     Fathom.load(process.env.NEXT_PUBLIC_FATHOM_TRACKING_CODE, {
-      includedDomains: ['https://naodigaisso.com'],
+      includedDomains: ['naodigaisso.com'],
     })
 
     function onRouteChangeComplete() {
