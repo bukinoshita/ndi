@@ -41,6 +41,6 @@
     "eslint-plugin-react-hooks": "4.0.6",
     "prettier": "2.0.5",
     "typescript": "3.9.6",
-    "vercel": "19.1.1"
+    "vercel": "19.1.2"
   }
 }
