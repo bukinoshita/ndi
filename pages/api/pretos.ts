@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import list from '../../words/pretos.json'
+import { pretos as expressions } from 'ndi-expressions'
 
 type Data = Array<{
   term: {
@@ -13,7 +13,7 @@ type Data = Array<{
 }>
 
 const pretos = (request: NextApiRequest, response: NextApiResponse<Data>) => {
-  response.status(200).json(list)
+  response.status(200).json(expressions)
 }
 
 export default pretos
