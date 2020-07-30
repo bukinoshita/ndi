@@ -5507,7 +5507,8 @@ natural-compare@^1.4.0:
 
 "ndi-expressions@git://github.com/naodigaisso/ndi-expressions.git":
   version "0.0.0"
-  resolved "git://github.com/naodigaisso/ndi-expressions.git#3caac1b06515736badfd851eacedf50ed12c02cd"
+  uid "5094566498dbcf8ce63848c2db6d0556bf46ef55"
+  resolved "git://github.com/naodigaisso/ndi-expressions.git#5094566498dbcf8ce63848c2db6d0556bf46ef55"
 
 neo-async@2.6.1, neo-async@^2.5.0, neo-async@^2.6.1:
   version "2.6.1"
