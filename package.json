@@ -18,7 +18,7 @@
     "fathom-client": "3.0.0",
     "isomorphic-unfetch": "3.0.0",
     "ndi-expressions": "git://github.com/naodigaisso/ndi-expressions.git",
-    "next": "9.5.1",
+    "next": "9.5.3",
     "next-offline": "5.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
