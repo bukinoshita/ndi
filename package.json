@@ -16,7 +16,7 @@
     "@bukinoshita/space": "0.0.7",
     "classnames": "2.2.6",
     "fathom-client": "3.0.0",
-    "isomorphic-unfetch": "3.0.0",
+    "isomorphic-unfetch": "3.1.0",
     "ndi-expressions": "git://github.com/naodigaisso/ndi-expressions.git",
     "next": "9.5.3",
     "next-offline": "5.0.2",
