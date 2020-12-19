@@ -1,1 +1,0 @@
-export { KBD } from './kbd'

@@ -6,7 +6,7 @@
   "repository": "bukinoshita/ndi",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
+    "dev": "doppler run -- next",
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
@@ -14,16 +14,19 @@
   },
   "dependencies": {
     "@bukinoshita/space": "0.0.7",
+    "autoprefixer": "10.1.0",
     "classnames": "2.2.6",
     "fathom-client": "3.0.0",
     "isomorphic-unfetch": "3.1.0",
     "ndi-expressions": "git://github.com/naodigaisso/ndi-expressions.git",
-    "next": "9.5.5",
+    "next": "10.0.3",
     "next-offline": "5.0.2",
-    "react": "16.14.0",
-    "react-dom": "16.13.1",
+    "postcss": "8.2.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "react-use-keypress": "1.0.1",
-    "swr": "0.3.6"
+    "swr": "0.3.6",
+    "tailwindcss": "2.0.2"
   },
   "devDependencies": {
     "@types/classnames": "2.2.10",
