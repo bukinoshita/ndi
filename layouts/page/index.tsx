@@ -6,7 +6,7 @@ import pkg from '../../package.json'
 import { Colors } from 'ui/theme'
 import { Row } from 'ui/row'
 import { Header } from 'components/header'
-import { Footer } from 'components/footer/footer'
+import { Footer } from 'components/footer'
 
 export type PageProps = {
   children: ReactNode
@@ -26,7 +26,7 @@ if ('document' in global) {
 
 export const Page = ({ children, onChangeWord, style }: PageProps) => {
   return (
-    <>
+    <div>
       <Head>
         <title>ndi — não diga isso</title>
         <meta name="description" content={pkg.description} />
@@ -60,7 +60,10 @@ export const Page = ({ children, onChangeWord, style }: PageProps) => {
       </Head>
 
       <Row>
-        <div className="page" style={style}>
+        <div
+          className="page flex justify-between flex-col h-screen	"
+          style={style}
+        >
           <Header />
           <main>{children}</main>
           {onChangeWord && <Footer onChangeWord={onChangeWord} />}
@@ -69,47 +72,10 @@ export const Page = ({ children, onChangeWord, style }: PageProps) => {
 
       <style jsx>{`
         .page {
-          display: flex;
-          justify-content: space-between;
-          flex-direction: column;
-          height: 100vh;
           height: calc(var(--vh, 1vh) * 100);
           min-height: -webkit-fill-available;
         }
       `}</style>
-
-      <style jsx global>{`
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          -webkit-font-smoothing: antialiased;
-        }
-
-        html,
-        body {
-          height: 100%;
-        }
-
-        body {
-          font-family: 'Inter';
-          background-color: ${Colors.White};
-          color: ${Colors.Black};
-        }
-
-        a {
-          color: ${Colors.Black};
-        }
-
-        svg {
-          vertical-align: middle;
-        }
-
-        img {
-          max-width: 100%;
-          width: 100%;
-        }
-      `}</style>
-    </>
+    </div>
   )
 }
