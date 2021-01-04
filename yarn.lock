@@ -5815,12 +5815,12 @@ react-refresh@0.8.3:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
-react-use-keypress@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-use-keypress/-/react-use-keypress-1.0.1.tgz#029bc4e360c1ed0f372ec90e5ae7c897b0a53b97"
-  integrity sha512-VcQOpSInZCpAl4wjoVPSz38q9vmbipbt+eBKBx4F0GAhbSEUUbbKGk+gFMzlslsMWkDukTbdp3aWzLyKx8bl/Q==
+react-use-keypress@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-use-keypress/-/react-use-keypress-1.2.0.tgz#45286222a3b64b13fc7a9919ecb101010206d0eb"
+  integrity sha512-eAQ0VJiry4Lamla1InX/pnHvmyewW5H1nWBIKuILMrn0tvyXRlFKyy01SMfHaqSHjelYKgqn4NOJegGE1aRzmg==
   dependencies:
-    use-latest "^1.1.0"
+    use-latest "^1.2.0"
 
 react@17.0.1:
   version "17.0.1"
@@ -7200,10 +7200,10 @@ use-isomorphic-layout-effect@^1.0.0:
   resolved "https://registry.yarnpkg.com/use-isomorphic-layout-effect/-/use-isomorphic-layout-effect-1.0.0.tgz#f56b4ed633e1c21cd9fc76fe249002a1c28989fb"
   integrity sha512-JMwJ7Vd86NwAt1jH7q+OIozZSIxA4ND0fx6AsOe2q1H8ooBUp5aN6DvVCqZiIaYU6JaMRJGyR0FO7EBCIsb/Rg==
 
-use-latest@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/use-latest/-/use-latest-1.1.0.tgz#7bf9684555869c3f5f37e10d0884c8accf4d3aa6"
-  integrity sha512-gF04d0ZMV3AMB8Q7HtfkAWe+oq1tFXP6dZKwBHQF5nVXtGsh2oAYeeqma5ZzxtlpOcW8Ro/tLcfmEodjDeqtuw==
+use-latest@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/use-latest/-/use-latest-1.2.0.tgz#a44f6572b8288e0972ec411bdd0840ada366f232"
+  integrity sha512-d2TEuG6nSLKQLAfW3By8mKr8HurOlTkul0sOpxbClIv4SQ4iOd7BYr7VIzdbktUCnv7dua/60xzd8igMU6jmyw==
   dependencies:
     use-isomorphic-layout-effect "^1.0.0"
 
